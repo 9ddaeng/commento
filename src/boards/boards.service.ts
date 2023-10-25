@@ -6,6 +6,8 @@ import { Board } from './board.entity';
 @Injectable()
 export class BoardsService {
   
+  // EntityRepository() 없ㄷ어짐
+  
   constructor(
     @InjectRepository(Board)
     private readonly boardRepository: BoardRepository
